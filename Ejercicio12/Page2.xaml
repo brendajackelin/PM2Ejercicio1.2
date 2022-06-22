@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio12.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" 
+               Padding="24" 
+               CornerRadius="0">
+
+                <Label Text="Ejercicio 1.1" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="36"/>
+            </Frame>
+
+            <Label Text="Brenda García 201810110018 | Juan Vigil 201810110400"
+                    FontSize="12"
+                    Margin="10"
+                    HorizontalOptions="Center"/>
+
+            <Label Text="DATOS" 
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center" 
+                   FontSize="25"/>
+
+            <Label Text="Nombres:" Padding="20"/>
+            <Entry Text="{Binding Nombres}" x:Name="nom" IsReadOnly="True"/>
+
+            <Label Text="Apellidos:" Padding="20"/>
+            <Entry Text="{Binding Apellidos}" x:Name="ape" IsReadOnly="True"/>
+
+            <Label Text="Edad:" Padding="20"/>
+            <Entry Text="{Binding Edad}" x:Name="edad" IsReadOnly="True"/>
+
+            <Label Text="Correo Electrónico:" Padding="20"/>
+            <Entry Text="{Binding Email}" x:Name="mail" IsReadOnly="True"/>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
